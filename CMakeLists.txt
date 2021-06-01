@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project( ResizerTest )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} include src)
+add_executable( ResizerTest demo/demo.cpp )
+target_link_libraries( ResizerTest ${OpenCV_LIBS} )
